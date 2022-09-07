@@ -5,7 +5,7 @@
 //координаты двух точек и находит расстояние между ними в 3D пространстве
 double GetDistance(int x1, int y1, int x2, int y2, int z1, int z2)
 {
-    double distance = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)+Math.Pow((z2 - z1), 2) );
+    double distance = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2) + Math.Pow((z2 - z1), 2));
     return Math.Round(distance, 2, MidpointRounding.ToNegativeInfinity);
 }
 
@@ -30,4 +30,4 @@ int y1 = int.Parse(Console.ReadLine());
 Console.Write("Input Z(2 number): ");
 int z1 = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"Растояние между точкой A c координатами ({x},{y},{z}) и точкой B c координатами({x1},{y1},{z1}) = {GetDistance(x, y, x1, y1,z,z1)}");
+Console.WriteLine($"Растояние между точкой A c координатами ({x},{y},{z}) и точкой B c координатами({x1},{y1},{z1}) = {GetDistance(x, y, x1, y1, z, z1)}");
