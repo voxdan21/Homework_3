@@ -23,4 +23,4 @@ string GetTripleTable(int n)
 
 Console.Write("Input number: ");
 int x = int.Parse(Console.ReadLine());
-Console.Write(GetTripleTable(x));
+Console.Write($"Таблица кубов от 1 до {x} = {GetTripleTable(x)}");
