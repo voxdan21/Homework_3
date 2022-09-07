@@ -44,7 +44,7 @@ string CheckPalindrome(int x)
 
 }
 
-// вариант с массивом для 5 знаков
+// вариант с массивом 
 string CheckPalindrome2(int x)
 {
     if (x < 10)
