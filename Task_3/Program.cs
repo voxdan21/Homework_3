@@ -4,19 +4,19 @@
 
 string GetTripleTable(int n)
 {
-    string squreString = "";
+    string tripleString = "";
     for (int i = 1; i <= n; i++)
     {
         if (i == n)
         {
-            squreString = squreString + $"{Math.Pow(i, 3)}";
+            tripleString = tripleString + $"{Math.Pow(i, 3)}";
         }
         else
         {
-            squreString = squreString + $"{Math.Pow(i, 3)}, ";
+            tripleString = tripleString + $"{Math.Pow(i, 3)}, ";
         }
     }
-    return squreString;
+    return tripleString;
 
 }
 
