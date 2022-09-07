@@ -1,0 +1,26 @@
+﻿// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+string GetTripleTable(int n)
+{
+    string squreString = "";
+    for (int i = 1; i <= n; i++)
+    {
+        if (i == n)
+        {
+            squreString = squreString + $"{Math.Pow(i, 3)}";
+        }
+        else
+        {
+            squreString = squreString + $"{Math.Pow(i, 3)}, ";
+        }
+    }
+    return squreString;
+
+}
+
+
+Console.Write("Input number: ");
+int x = int.Parse(Console.ReadLine());
+Console.Write(GetTripleTable(x));
