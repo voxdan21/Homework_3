@@ -5,6 +5,13 @@
 string GetTripleTable(int n)
 {
     string tripleString = "";
+  
+    if(n<1)
+    { 
+        return "неверное число было введено Вами";
+    }
+    else 
+    {
     for (int i = 1; i <= n; i++)
     {
         if (i == n)
@@ -19,7 +26,7 @@ string GetTripleTable(int n)
     return tripleString;
 
 }
-
+}
 
 Console.Write("Input number: ");
 int x = int.Parse(Console.ReadLine());
